@@ -86,6 +86,7 @@ rad3Dout     = .true.,
 doradtendency                 = .false.,
 dowtg_hermanraymond_JAMES2014 = .true.
 dowtgBL                       = .false.
+dorz2005                      = .false.
 dowtgBL_2piece                = .false.
 
 tau_wtg              = 0.5,          ! momentum damping rate in day^-1, default= 1.,
