@@ -32,6 +32,7 @@ donudging_uv     = .true.,
 donudging_tq     = .false.,
 
 tauls = 3600.,
+timelargescale = 432000.,
 
 SFC_FLX_FXD    = .false.,
 SFC_TAU_FXD    = .false.,
@@ -60,7 +61,7 @@ doisccp = .false.,
 domodis = .false.,
 domisr  = .false.,
 
-nstop    = 288000,
+nstop    = 72000,
 nprint   = 2880,
 nstat    = 30,    ! Calculate statistics every hour!
 nstatfrq = 10,     ! Collect 60 samples per statistical calculation (every 1 minute)
