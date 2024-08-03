@@ -33,7 +33,7 @@ donudging_uv     = .true.,
 donudging_tq     = .false.,
 
 tauls = 3600.,
-timelargescale = 432000.,
+timelargescale = 9072000.,
 
 SFC_FLX_FXD = .false.,
 SFC_TAU_FXD = .false.,
