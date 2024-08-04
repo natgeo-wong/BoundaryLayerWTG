@@ -1,6 +1,6 @@
 &PARAMETERS
 
-caseid         = 'ExploreWTGSpace-P_SPC_BL',
+caseid         = 'ExploreWTGSpace-P_BL',
 case_restart   = 'SAM',
 caseid_restart = 'ExploreWTGSpace-P_SPIN',
 
@@ -40,7 +40,7 @@ SFC_TAU_FXD    = .false.,
 longitude0 = 0.,
 latitude0  = 0.,
 day0       = 0.,
-tabs_s     = 300.5,
+tabs_s     = 305.,
 Szero      = 0,
 
 depth_slab_ocean = 1.,
@@ -84,10 +84,11 @@ rad3Dout     = .true.,
 &KUANG_PARAMS
 
 doradtendency                 = .false.,
-dowtg_hermanraymond_JAMES2014 = .true.
-dowtgBL                       = .true.
+dowtg_blossey_etal_JAMES2009  = .true.
 dowtgBL_2piece                = .true.
 
-tau_wtg              = 0.5,          ! momentum damping rate in day^-1, default= 1.,
+am_wtg               = 0.2,          ! momentum damping rate in day^-1, default= 1.,
+am_wtg_exp           = 0.,           ! exponent of p/p0 in momentum damping rate.
+lambda_wtg           = 1000.e3,      ! quarter wavelength in m. default = 650.e3 m
 
 /
