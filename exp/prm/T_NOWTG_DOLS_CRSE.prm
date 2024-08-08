@@ -1,6 +1,6 @@
 &PARAMETERS
 
-caseid = 'ExploreWTGSpace-T_SPINCONT',
+caseid         = 'ExploreWTGSpace-T_SPC_NOWTG_DOLS_CRSE',
 case_restart   = 'SAM',
 caseid_restart = 'ExploreWTGSpace-T_SPIN',
 
@@ -24,7 +24,7 @@ dolongwave       = .false.,
 doshortwave      = .false.,
 dosurface        = .true.,
 dodynamicocean   = .false.,
-dolargescale     = .false.,
+dolargescale     = .true.,
 doradforcing     = .false.,
 doradhomo        = .false.,
 dosfcforcing     = .false.,
@@ -33,6 +33,7 @@ donudging_uv     = .true.,
 donudging_tq     = .false.,
 
 tauls = 3600.,
+timelargescale = 9072000.,
 
 SFC_FLX_FXD = .false.,
 SFC_TAU_FXD = .false.,
@@ -84,11 +85,11 @@ rad3Dout     = .true.,
 &KUANG_PARAMS
 
 doradtendency                 = .true.,
-dowtg_blossey_etal_JAMES2009  = .true.
+dowtg_hermanraymond_JAMES2014 = .false.
+dowtgBL                       = .false.
+dorz2005                      = .false.
 dowtgBL_2piece                = .false.
 
-am_wtg               = 0.2,          ! momentum damping rate in day^-1, default= 1.,
-am_wtg_exp           = 0.,           ! exponent of p/p0 in momentum damping rate.
-lambda_wtg           = 1000.e3,      ! quarter wavelength in m. default = 650.e3 m
+tau_wtg              = 10.,          ! momentum damping rate in day^-1, default= 1.,
 
 /
